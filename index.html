@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Event Registration Portal</h1>
+
+        <div class="form-box">
+            <h2>Register for Event</h2>
+
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <input type="text" id="phone" placeholder="Enter Phone Number">
+
+            <select id="event">
+                <option value="">Select Event</option>
+                <option value="Technical Workshop">Technical Workshop</option>
+                <option value="Coding Competition">Coding Competition</option>
+                <option value="Cultural Event">Cultural Event</option>
+                <option value="Sports Event">Sports Event</option>
+            </select>
+
+            <button onclick="register()">Register</button>
+        </div>
+
+        <h2>Registered Participants</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Event</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="participantList"></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
